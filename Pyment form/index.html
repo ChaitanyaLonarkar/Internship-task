@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Form</title>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 20px;
+      }
+      .step .input {
+        display: flex;
+        /* justify-content: center;
+        align-items: center; */
+        flex-direction: column;
+      }
+      .form {
+        border: 2px solid green;
+        background-color: rgb(154, 198, 109);
+        padding: 20px;
+        width: 450px;
+        border-radius: 8px;
+      }
+      .inside-input {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid rgb(218, 233, 196);
+        background-color: rgb(184, 215, 155);
+        align-items: center;
+        border-radius: 5px;
+        padding: 8px 20px;
+        margin: 1px 0px;
+      }
+      input {
+        border-radius: 3px;
+        border: none;
+        height: 30px;
+        margin-right: 60px;
+        width: 200px;
+        padding: 0px 5px;
+      }
+      input::placeholder {
+        font-style: italic;
+      }
+      .button {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        border: 1px soid black;
+      }
+      .btn {
+        padding: 5px;
+        border: none;
+        background-color: #363e08;
+        color: antiquewhite;
+        width: 70px;
+        border-radius: 15px;
+        margin-right: 0px;
+      }
+      h3{
+        margin: 12px 0px;
+      }
+
+      input:focus {
+        outline: none;
+        background-color: rgb(233, 243, 233);
+      }
+      input[type="radio"] {
+        width: 15px;
+        margin: 0px;
+      }
+      .radio{
+        border: 1px solid rgb(218, 233, 196);
+        background-color: rgb(184, 215, 155);
+        align-items: center;
+        border-radius: 5px;
+        padding: 8px 20px;
+        margin: 1px 0px;
+    }
+      .radio-btn {
+        display: flex;
+        align-items: center;
+      }
+      .radiodiv {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      img{
+        width: 35px;
+        margin: 0px 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Payment Form</h1>
+      <div class="form">
+        <form action="#">
+          <div class="step step-1">
+            <h3>Step 1: Yours details</h3>
+            <div class="input">
+              <div class="inside-input">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="firstname and lastname"
+                />
+              </div>
+              <div class="inside-input">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="example@domain.com"
+                />
+              </div>
+              <div class="inside-input">
+                <label for="phone">Phone</label>
+                <input type="number" id="phone" placeholder="Eg.+91785454545" />
+              </div>
+            </div>
+          </div>
+          <div class="step step-2">
+            <h3>Step 2: Delivery address</h3>
+            <div class="input">
+              <div class="inside-input">
+                <label for="Address">Address</label>
+                <input type="textarea" id="Address" />
+              </div>
+              <div class="inside-input">
+                <label for="Pincode">Pin code</label>
+                <input type="number" id="Pincode" />
+              </div>
+              <div class="inside-input">
+                <label for="Country">Country</label>
+                <input type="text" id="Country" />
+              </div>
+            </div>
+          </div>
+          <div class="step step-3">
+            <h3>Step 3: Card details</h3>
+            <div class="input">
+              <div class="radio">
+                <label for="cardnumber">Card type</label>
+                <br />
+                <div class="radiodiv">
+                  <div class="radio-btn">
+                    <input type="radio" name="VISA" id="" />
+                    <img src="./visa.JPG" alt="" srcset="">
+                    <label for="">VISA</label>
+                  </div>
+                  <div class="radio-btn">
+                    <input type="radio" name="AmEx" id="" />
+                    <img src="./amex.JPG" alt="" srcset="">
+                    <label for="">AmEx</label>
+                  </div>
+                  <div class="radio-btn">
+                    <input type="radio" name="Mastercard" id="" />
+                    <img src="./master.png" alt="" srcset="">
+                    <label for="">Mastercard</label>
+                  </div>
+                </div>
+              </div>
+              <div class="inside-input">
+                <label for="cardnumber">card number</label>
+                <input type="number" id="cardnumber" />
+              </div>
+              <div class="inside-input">
+                <label for="Securitycode">Security code</label>
+                <input type="number" id="Securitycode" />
+              </div>
+              <div class="inside-input">
+                <label for="nameoncard">Name on card</label>
+                <input
+                  type="text"
+                  id="nameoncard"
+                  placeholder="Exact name on card"
+                />
+              </div>
+              <div class="button">
+                <input type="button" value="BUY IT!" class="btn" />
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
