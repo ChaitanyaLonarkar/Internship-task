@@ -1,0 +1,91 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    /* font-family: 'Poppins', sans-serif; */
+    letter-spacing: 0.5px;
+    font-family: 'Josefin Sans', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Mukta', sans-serif;
+font-family: 'Poppins', sans-serif;
+}
+.container{
+    display: flex;
+    width: 65em;
+    margin: 20px auto;
+}
+.sidebar-left{
+    padding: 20PX;
+    background-color: rgb(30 88 82);
+    color: rgb(209, 218, 208);
+}
+.head{
+    text-align: center;
+    line-height: 20px;
+}
+img{
+    width: 160px;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+.sidebar-left h5{
+    color: antiquewhite;
+   margin: 10px 0px;
+
+}
+
+hr{
+    height: 2px;
+    width: 201px;
+    background-color: black;
+    BORDER: NONE;
+}
+
+.sidebar-left h3,.sidebar-left h4{
+color: rgb(251, 254, 250);
+}
+.sidebar-left p{
+    color: rgb(167, 176, 173);
+    margin: 13px 0px;
+}
+.sidebar-left i{
+    color: rgb(80, 175, 226);
+    margin-right: 10px;
+}
+.contact, .skills ,.references{
+    margin: 30px 0px;
+}
+.contact{
+    /* border: 1px solid red ; */
+}
+.icon{
+    display: flex;
+    align-items: center;
+    line-height: 4px;
+
+}
+
+.content-right{
+    padding: 20px;
+    background-color: #5f9ea040;
+}
+.one{
+    display: flex;
+    width: 100%;
+}
+
+.left{
+    width: 35%;
+}
+.position{
+    width: 65%;
+}
+.r1{
+    margin-bottom: 22px;
+}
+.content-right h4 {
+    color: rgb(13 125 187);
+    margin: 5px 0px;
+}
+.about{
+    margin-bottom: 40px;
+}
