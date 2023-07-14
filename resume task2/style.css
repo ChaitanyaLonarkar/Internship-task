@@ -1,0 +1,108 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui;
+    letter-spacing: 0.7px;
+}
+.container{
+    width: 65em;
+    margin: 40px auto ;
+    display: flex;
+    /* border: 2px solid red; */
+}
+
+.sidebar{
+    background-color: #113249;
+    color: rgb(208, 217, 225);
+    padding: 30px;
+    width: 25%;
+
+}
+.sidebar h3{
+    color: rgb(255 255 255);
+    font-weight: 500;
+
+}
+.icon{
+    display: flex;
+    align-items: center;
+
+}
+.sidebar p{
+    margin: 6px 0px;
+}
+.icon i{
+    margin: 0px 7px 0px 0px;
+}
+.sidebar .contact, .skills,.languages{
+    margin-bottom: 35px;
+}
+
+.award{
+    font-size: 14px;
+}
+
+ .progress{
+    height: 10px;
+    width: 100%;
+    border-radius: 2px;
+    background: linear-gradient(to right, rgb(50, 142, 212) 40%, rgb(208, 217, 225) 40%);
+}
+ .progress .p40{
+    width: 40%;
+    background: #1b71af;
+}
+
+.content-right{
+    padding: 25px;
+    color: #113249;
+    background-color: aliceblue;
+
+}
+
+.content-right h1 ,.content-right h4 {
+    margin:10px 0px;
+    font-weight: 500;
+}
+.content-right h3{
+    font-weight: 500;
+    color: #3675a3;
+}
+
+hr{
+    height: 3px;
+    border-radius: 5px;
+    margin: 10px 0px;
+    background-color: #3675a3;
+    border: none;
+    width: 95%;
+}
+
+.experience p{
+   margin: 3px 0px;
+   font-weight: 600;
+}
+.experience .role{
+    display: flex;
+    justify-content: space-between;
+
+}
+.period{
+    color: #378fdc;
+}
+.edu-content,.inside-pro{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
